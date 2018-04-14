@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王者荣耀商城-王者荣耀官方网站-腾讯游戏</title>
+    <link rel="shortcut icon" href="./timi.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/storebase.css">
+    <link rel="stylesheet" type="text/css" href="./css/icomoon/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/personCenter.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <!--顶部导航js-->
+    <script>
+        $(function () {
+            var $head = $("#head");
+            var scrollTop = $(window).scrollTop();
+            (scrollTop > 0) ? $head.addClass("fix") : $head.removeClass("fix");
+            // 头部滚动fixed
+            $(document).on("scroll", function () {
+                var scrollTop = $(window).scrollTop();
+                // console.log(scrollTop);
+                (scrollTop > 0) ? $head.addClass("fix") : $head.removeClass("fix");
+            })
+        });
+    </script>
+</head>
+<body>
+<!--顶部导航-->
+<div class="topHead">
+    <div class="head" id="head">
+        <!--顶部导航上半部分-->
+        <div class="inner">
+            <!--王者荣耀logo-->
+            <div class="logo">
+                <h2>
+                    <a href="#">王者荣耀周边商城</a>
+                </h2>
+                <h1>
+                    <a href="#">王者荣耀</a>
+                </h1>
+            </div>
+            <!--个人中心导航-->
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>我的收藏</p>
+                            <p>COLLECTION</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>个人中心</p>
+                            <p>MEMBER</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>帮助中心</p>
+                            <p>HELP</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>我的订单</p>
+                            <p>ORDERS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--微信/QQ登录-->
+            <div class="login fr">
+                <a href="#">微信登录</a>
+                <a href="#">QQ登录</a>
+            </div>
+        </div>
+        <!--顶部导航下半部分-->
+        <div class="mainnav">
+            <ul>
+                <li><a href="./store.html">首页</a></li>
+                <li><a href="./mengxin.html">萌新伙伴</a></li>
+                <li><a href="#">齐天大圣</a></li>
+                <li><a href="#">逍遥游</a></li>
+                <li><a href="#">凤凰于飞</a></li>
+                <li><a href="#">凤求凰手办</a></li>
+                <li><a href="#">王者态度</a></li>
+                <li><a href="#">机关博弈</a></li>
+                <li><a href="#">黄金年代</a></li>
+                <li><a href="#">鎏金群雄</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--中间个人中心部分-->
+<div class="perCenter">
+    <div class="w center">
+        <!--个人中心头部-->
+        <div class="pertop">
+            个人中心
+        </div>
+        <div class="centernav">
+            <div class="nav fl">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon-cart"></span>
+                            我的购物车
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon-file-text"></span>
+                            我的订单
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon-file-text2"></span>
+                            我的评价
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="current">
+                            <span class="icon-star-full"></span>
+                            我的收藏
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon-location2"></span>
+                            收货地址
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon-profile"></span>
+                            个人资料
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon-volume-medium"></span>
+                            系统消息
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="blank fl">
+                <div class="line">
+                    <ul>
+                        <li class="one">商品</li>
+                        <li>价格</li>
+                        <li>是否有货</li>
+                        <li>操作</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--商城底部-->
+<!--服务相关部分-->
+<div class="foot">
+    <!--7天 免邮 正品-->
+    <div class="ser">
+        <ul>
+            <li>
+                <b>7</b>
+
+                <p>天无忧退换货</p>
+            </li>
+            <li>
+                <b>免</b>
+
+                <p>全场每单满188元包邮</p>
+            </li>
+            <li>
+                <b>正</b>
+
+                <p>100%官方正品</p>
+            </li>
+        </ul>
+    </div>
+    <!--购物指南 售后-->
+    <div class="service">
+        <!--购物指南-->
+        <ul>
+            <li>
+                <h4>购物指南</h4>
+            </li>
+            <li>
+                <a href="#">账号注册与登录</a>
+            </li>
+            <li>
+                <a href="#">购买流程介绍</a>
+            </li>
+            <li>
+                <a href="#">支付方式</a>
+            </li>
+            <li>
+                <a href="#">常见问题</a>
+            </li>
+        </ul>
+        <!--配送服务-->
+        <ul>
+            <li>
+                <h4>配送服务</h4>
+            </li>
+            <li>
+                <a href="#">全场满188元包邮</a>
+            </li>
+            <li>
+                <a href="#">配送范围及运费</a>
+            </li>
+            <li>
+                <a href="#">配送进度查询</a>
+            </li>
+        </ul>
+        <!--售后服务-->
+        <ul>
+            <li>
+                <h4>售后服务</h4>
+            </li>
+            <li>
+                <a href="#">退换货流程</a>
+            </li>
+            <li>
+                <a href="#">商品送错的处理方式</a>
+            </li>
+            <li>
+                <a href="#">售后服务及投诉</a>
+            </li>
+        </ul>
+        <!--服务中心-->
+        <ul>
+            <li>
+                <h4>服务中心</h4>
+            </li>
+            <li>
+                400869336(在线QQ)
+            </li>
+            <li>
+                客服热线: 4008693336
+            </li>
+            <li>
+                售后:
+                <a href="#">wangzherongyao@sunsum.com.cn</a>
+            </li>
+        </ul>
+        <!--二维码-->
+        <ul class="ewm">
+            <li>
+                <img src="image/ewmPic.jpg" alt=""/><br/>
+
+                <p><a href="#">前往王者荣耀</a></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--关于声明等-->
+<div class="footlist">
+    <ul>
+        <li>
+            <a href="3">关于商城</a>
+        </li>
+        <li>
+            <a href="3">服务条款</a>
+        </li>
+        <li>
+            <a href="3">合作伙伴</a>
+        </li>
+        <li>
+            <a href="3">法律声明</a>
+        </li>
+    </ul>
+</div>
+<!--版权-->
+<div class="footer">
+    <div class="copyright">
+        <p>
+            <a href="#">腾讯互动娱乐</a>
+            <span>|</span>
+            <a href="#">服务条款</a>
+            <span>|</span>
+            <a href="#">广告服务</a>
+            <span>|</span>
+            <a href="#">腾讯游戏招聘</a>
+            <span>|</span>
+            <a href="#">腾讯游戏客服</a>
+            <span>|</span>
+            <a href="#">游戏地图</a>
+            <span>|</span>
+            <a href="#">游戏活动</a>
+            <span>|</span>
+            <a href="#">成长守护平台</a>
+            <span>|</span>
+            <a href="#">商务合作</a>
+            <span>|</span>
+            <a href="#">网站导航</a>
+        </p>
+
+        <p>COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+
+        <p>
+            <a href="#">腾讯公司 版权所有</a>
+        </p>
+    </div>
+</div>
+
+<!--右侧固定部分 购物车-->
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li>
+            <a href="#" title="收藏夹">
+                <p class="icon-folder-open"></p>
+                <p>收</p>
+                <p>藏</p>
+                <p>夹</p>
+            </a>
+        </li>
+        <li class="shoppingcar">
+            <a href="#" title="购物车">
+                <p class="icon-cart"></p>
+                <p>购</p>
+                <p>物</p>
+                <p>车</p>
+                <i class="carnum">0</i>
+            </a>
+        </li>
+        <li>
+            <a href="#" title="咨询客服">
+                <p class="icon-user"></p>
+                <p>咨询</p>
+                <p>客服</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="back" id="back">
+    <p></p>
+</div>
+<!--右侧固定部分 购物车的js-->
+    <script>
+        //  点击侧边栏底部back使回到顶部,并隐藏ul或者显示ul
+        $('#back').on('click', function () {
+            $('body, html').stop().animate({
+                'scrollTop': 0
+            },100);
+            if ($('#back').hasClass('back')){
+                $('#sidebar').hide();
+                $('#back').removeClass('back').addClass('backTop');
+            } else {
+                $('#sidebar').show();
+                $('#back').removeClass('backTop').addClass('back');
+            }
+        });
+    </script>
+</body>
+</html>

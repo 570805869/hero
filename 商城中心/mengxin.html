@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王者荣耀商城-王者荣耀官方网站-腾讯游戏</title>
+    <link rel="shortcut icon" href="./timi.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/storebase.css">
+    <link rel="stylesheet" type="text/css" href="./css/icomoon/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/mengxin.css"/>
+    <script src="js/jquery-1.12.4.js"></script>
+    <!--顶部导航的js样式-->
+    <script>
+        $(function () {
+            var $head = $("#head");
+            var scrollTop = $(window).scrollTop();
+            (scrollTop > 0) ? $head.addClass("fix") : $head.removeClass("fix");
+            // 头部滚动fixed
+            $(document).on("scroll", function () {
+                var scrollTop = $(window).scrollTop();
+                // console.log(scrollTop);
+                (scrollTop > 0) ? $head.addClass("fix") : $head.removeClass("fix");
+            })
+        });
+    </script>
+</head>
+<body>
+<!--顶部导航-->
+<div class="topHead">
+    <div class="head" id="head">
+        <!--顶部导航上半部分-->
+        <div class="inner">
+            <!--王者荣耀logo-->
+            <div class="logo">
+                <h2>
+                    <a href="#">王者荣耀周边商城</a>
+                </h2>
+
+                <h1>
+                    <a href="#">王者荣耀</a>
+                </h1>
+            </div>
+            <!--个人中心导航-->
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="./personalCenter.html">
+                            <p>我的收藏</p>
+
+                            <p>COLLECTION</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>个人中心</p>
+
+                            <p>MEMBER</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>帮助中心</p>
+
+                            <p>HELP</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>我的订单</p>
+
+                            <p>ORDERS</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--微信/QQ登录-->
+            <div class="login fr">
+                <a href="#">微信登录</a>
+                <a href="#">QQ登录</a>
+            </div>
+        </div>
+        <!--顶部导航下半部分-->
+        <div class="mainnav">
+            <ul>
+                <li><a href="./store.html">首页</a></li>
+                <li class="active"><a href="#">萌新伙伴</a></li>
+                <li><a href="#">齐天大圣</a></li>
+                <li><a href="#">逍遥游</a></li>
+                <li><a href="#">凤凰于飞</a></li>
+                <li><a href="#">凤求凰手办</a></li>
+                <li><a href="#">王者态度</a></li>
+                <li><a href="#">机关博弈</a></li>
+                <li><a href="#">黄金年代</a></li>
+                <li><a href="#">鎏金群雄</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<audio src="./川井憲次-The%20offensive.mp3" autoplay loop></audio>
+
+<!--萌新产品介绍-->
+<!--产品介绍顶部-->
+<div class="productTop">
+    <a href="#">商城首页</a>
+    <span>＞</span>
+    <a href="#">萌新伙伴赵云妲己挂件</a>
+</div>
+<!--产品详情-->
+<div class="productDetails">
+    <div class="details w">
+        <!--左侧产品展示-->
+        <div class="image fl">
+            <ul class="small fl" id="small">
+                <li class="current"><img src="./image/li1.jpg" alt=""/></li>
+                <li><img src="./image/li2.jpg" alt=""/></li>
+                <li><img src="./image/li3.jpg" alt=""/></li>
+                <li><img src="./image/li4.jpg" alt=""/></li>
+                <li><img src="./image/li5.jpg" alt=""/></li>
+            </ul>
+            <ul class="big fl" id="big">
+                <li><img src="./image/li1.jpg" class="block" alt=""/></li>
+                <li><img src="./image/li2.jpg" alt=""/></li>
+                <li><img src="./image/li3.jpg" alt=""/></li>
+                <li><img src="./image/li4.jpg" alt=""/></li>
+                <li><img src="./image/li5.jpg" alt=""/></li>
+            </ul>
+            <button class="fangda icon-search" id="fangda"></button>
+        </div>
+        <!--右侧价格等-->
+        <div class="title fl">
+            <p>萌新伙伴赵云妲己挂件</p>
+
+            <p>¥118.00</p>
+            <span>
+                <b>免</b>
+                试运营全场包邮
+            </span>
+            <span>
+                <b>货</b>
+                试运营期间成功购买后7天内发货
+            </span>
+            <!--虚横线-->
+            <i></i>
+            <!--数量的文本框-->
+            <div class="input">
+                <p class="fl">数&nbsp;&nbsp;&nbsp;量:</p>
+
+                <div class="sum fl">
+                    <!--数量减-->
+                    <button class="fl" id="minus">-</button>
+                    <input type="text" value="1" class="fl" id="sum"/>
+                    <!--数量加-->
+                    <button class="fl" id="add">+</button>
+                </div>
+                <span class="you">有货</span>
+            </div>
+            <!--加入购物车 立即购买-->
+            <div class="buy">
+                <a>加入购物车</a>
+                <a>立即购买</a>
+                <i class="icon-star-full" id="collect">收藏Ta</i>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <b>7</b>
+
+                        <p>天无忧退换货</p>
+                    </li>
+                    <li>
+                        <b>免</b>
+
+                        <p>全场每单满188元包邮</p>
+                    </li>
+                    <li>
+                        <b>正</b>
+
+                        <p>100%官方正品</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--弹出层显示放大图片-->
+<div id="tancengBox">
+    <div id="tanchuceng" class="tanchuceng"></div>
+</div>
+
+<!--商品详情  用户评论 售后服务-->
+<div class="productCenternav">
+    <ul>
+        <li>
+            <span>商品详情</span>
+            <span class="border borderCurrent"></span>
+        </li>
+        <li>
+            <span>用户评论</span>
+            <i>273</i>
+            <span class="border"></span>
+        </li>
+        <li>
+            <span>售后服务</span>
+            <span class="border"></span>
+        </li>
+    </ul>
+</div>
+<div class="productCenter" id="productCenter">
+    <!--商品详情-->
+    <div class="xiangqing w">
+        <ul>
+            <li><img src="./image/mengxinxiangqing.jpg" alt=""/></li>
+            <li><img src="./image/mengxiangqing02.jpg" alt=""/></li>
+            <li><img src="./image/mengxiangqing03.jpg" alt=""/></li>
+            <li><img src="./image/mengxiangqing04.jpg" alt=""/></li>
+            <li><img src="./image/mengxiangqing05.jpg" alt=""/></li>
+            <li><img src="./image/mengxiangqinglast.jpg" alt=""/></li>
+        </ul>
+    </div>
+    <!--用户评论-->
+    <div class="pingluns w">
+        <div class="pingTop">
+          <span>
+              玩家综合评分:&nbsp;&nbsp;
+          </span>
+            <span>5.0</span>
+            <i class="icon-star-full"></i>
+            <i class="icon-star-full"></i>
+            <i class="icon-star-full"></i>
+            <i class="icon-star-full"></i>
+            <i class="icon-star-full"></i>
+        </div>
+        <div class="pingTitle">
+            <ul>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang23.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>好萌啊,相当不错</p>
+                    </div>
+                    <div class="fr time">2018-03-26 &nbsp;01:41:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang22.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>很漂亮。做工也精致。就是作为挂件来说太大啦</p>
+                    </div>
+                    <div class="fr time">2018-02-26 &nbsp;10:41:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang21.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>很精美啊，正版的就是正版，赞！希望可以出一个虞姬霸王别姬手办，想送给女朋友！</p>
+                    </div>
+                    <div class="fr time">2018-03-06 &nbsp;12:48:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang20.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>妲己很萌，挂件都很精致一分钱一分货</p>
+                    </div>
+                    <div class="fr time">2018-02-06 &nbsp;08:41:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang11.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>
+                            买的时候犹豫了好久，小小一个，想了想好喜欢还是买了……
+                            果然还是值得的！！！做工挺精细的，尺寸也比想象的大，好喜欢，开心。
+                        </p>
+                    </div>
+                    <div class="fr time">2018-03-26 &nbsp;18:31:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang18.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>质量手感都很好，就是有点大</p>
+                    </div>
+                    <div class="fr time">2018-03-10 &nbsp;11:20:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang17.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>精致！精致！精致！我和女友一人一个～哈哈哈</p>
+                    </div>
+                    <div class="fr time">2018-04-06 &nbsp;15:01:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang16.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>送女儿的玩具，很喜欢</p>
+                    </div>
+                    <div class="fr time">2018-04-03 &nbsp;11:21:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang15.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>心怀不惧，方能翱翔于天际。</p>
+                    </div>
+                    <div class="fr time">2018-04-07 &nbsp;01:20:00</div>
+                </li>
+                <li>
+                    <div class="fl touxiang"><img src="./image/touxiang14.jpg" alt=""/></div>
+                    <div class="fl lun">
+                        <p>
+                            <span>玩家综合评分:&nbsp;&nbsp;</span>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i class="icon-star-full"></i>
+                            <i>5.0</i>
+                        </p>
+                        <p>喜欢，棒棒哒！做工很细致，很有质感，值这个价钱。</p>
+                    </div>
+                    <div class="fr time">2017-12-12 &nbsp;00:59:50</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--售后服务-->
+    <div class="shouhous w">
+       <div class="shouhouxinxi">
+           <ol>
+               <li class="bh">
+                   商家:&nbsp;&nbsp;官方商城
+               </li>
+               <li class="bh">
+                   商家联系方式
+               </li>
+               <li>
+                   电话:&nbsp;&nbsp;4006060979
+               </li>
+               <li>
+                   QQ:&nbsp;&nbsp;800848983
+               </li>
+               <li>
+                   <a href="#"><img src="./image/button_111.gif" alt=""/></a>
+               </li>
+               <li class="bh">商家服务时间</li>
+               <li>在线时间：每天上午09:00-晚上24:00</li>
+           </ol>
+       </div>
+    </div>
+</div>
+
+<!--商城底部-->
+<!--服务相关部分-->
+<div class="foot">
+    <!--7天 免邮 正品-->
+    <div class="ser">
+        <ul>
+            <li>
+                <b>7</b>
+
+                <p>天无忧退换货</p>
+            </li>
+            <li>
+                <b>免</b>
+
+                <p>全场每单满188元包邮</p>
+            </li>
+            <li>
+                <b>正</b>
+
+                <p>100%官方正品</p>
+            </li>
+        </ul>
+    </div>
+    <!--购物指南 售后-->
+    <div class="service">
+        <!--购物指南-->
+        <ul>
+            <li>
+                <h4>购物指南</h4>
+            </li>
+            <li>
+                <a href="#">账号注册与登录</a>
+            </li>
+            <li>
+                <a href="#">购买流程介绍</a>
+            </li>
+            <li>
+                <a href="#">支付方式</a>
+            </li>
+            <li>
+                <a href="#">常见问题</a>
+            </li>
+        </ul>
+        <!--配送服务-->
+        <ul>
+            <li>
+                <h4>配送服务</h4>
+            </li>
+            <li>
+                <a href="#">全场满188元包邮</a>
+            </li>
+            <li>
+                <a href="#">配送范围及运费</a>
+            </li>
+            <li>
+                <a href="#">配送进度查询</a>
+            </li>
+        </ul>
+        <!--售后服务-->
+        <ul>
+            <li>
+                <h4>售后服务</h4>
+            </li>
+            <li>
+                <a href="#">退换货流程</a>
+            </li>
+            <li>
+                <a href="#">商品送错的处理方式</a>
+            </li>
+            <li>
+                <a href="#">售后服务及投诉</a>
+            </li>
+        </ul>
+        <!--服务中心-->
+        <ul>
+            <li>
+                <h4>服务中心</h4>
+            </li>
+            <li>
+                400869336(在线QQ)
+            </li>
+            <li>
+                客服热线: 4008693336
+            </li>
+            <li>
+                售后:
+                <a href="#">wangzherongyao@sunsum.com.cn</a>
+            </li>
+        </ul>
+        <!--二维码-->
+        <ul class="ewm">
+            <li>
+                <img src="image/ewmPic.jpg" alt=""/><br/>
+
+                <p><a href="#">前往王者荣耀</a></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--关于声明等-->
+<div class="footlist">
+    <ul>
+        <li>
+            <a href="3">关于商城</a>
+        </li>
+        <li>
+            <a href="3">服务条款</a>
+        </li>
+        <li>
+            <a href="3">合作伙伴</a>
+        </li>
+        <li>
+            <a href="3">法律声明</a>
+        </li>
+    </ul>
+</div>
+<!--版权-->
+<div class="footer">
+    <div class="copyright">
+        <p>
+            <a href="#">腾讯互动娱乐</a>
+            <span>|</span>
+            <a href="#">服务条款</a>
+            <span>|</span>
+            <a href="#">广告服务</a>
+            <span>|</span>
+            <a href="#">腾讯游戏招聘</a>
+            <span>|</span>
+            <a href="#">腾讯游戏客服</a>
+            <span>|</span>
+            <a href="#">游戏地图</a>
+            <span>|</span>
+            <a href="#">游戏活动</a>
+            <span>|</span>
+            <a href="#">成长守护平台</a>
+            <span>|</span>
+            <a href="#">商务合作</a>
+            <span>|</span>
+            <a href="#">网站导航</a>
+        </p>
+
+        <p>COPYRIGHT © 1998 – 2018 TENCENT. ALL RIGHTS RESERVED.</p>
+
+        <p>
+            <a href="#">腾讯公司 版权所有</a>
+        </p>
+    </div>
+</div>
+
+
+<!--右侧固定部分 购物车-->
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li>
+            <a href="#" title="收藏夹">
+                <p class="icon-folder-open"></p>
+
+                <p>收</p>
+
+                <p>藏</p>
+
+                <p>夹</p>
+            </a>
+        </li>
+        <li class="shoppingcar">
+            <a href="#" title="购物车">
+                <p class="icon-cart"></p>
+
+                <p>购</p>
+
+                <p>物</p>
+
+                <p>车</p>
+                <i class="carnum">0</i>
+            </a>
+        </li>
+        <li>
+            <a href="#" title="咨询客服">
+                <p class="icon-user"></p>
+
+                <p>咨询</p>
+
+                <p>客服</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="back" id="back">
+    <p></p>
+</div>
+<script src="./js/mengxin.js"></script>
+<!--右侧固定部分 购物车的js-->
+<script>
+    //  点击侧边栏底部back使回到顶部,并隐藏ul或者显示ul
+    $('#back').on('click', function () {
+        $('body, html').stop().animate({
+            'scrollTop': 0
+        }, 100);
+        if ($('#back').hasClass('back')) {
+            $('#sidebar').hide();
+            $('#back').removeClass('back').addClass('backTop');
+        } else {
+            $('#sidebar').show();
+            $('#back').removeClass('backTop').addClass('back');
+        }
+    });
+</script>
+</body>
+</html>

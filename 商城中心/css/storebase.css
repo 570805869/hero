@@ -1,0 +1,44 @@
+p,h1,h2,h3,h4,h5,h6,body,ol,ul,li,dt,dd,dl,img {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    color: #000;
+}
+body {
+    background-color: #fff;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img,input,button {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    outline-style: none;
+    vertical-align: middle;
+}
+.clearfix::after {
+    content: "";
+    width: 0;
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}

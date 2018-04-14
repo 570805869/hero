@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>王者荣耀职业联赛</title>
+    <link rel="shortcut icon" href="./timi.ico"/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/data.css">
+    <link rel="stylesheet" type="text/css" href="css/keai.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="js/tool.js"></script>
+
+</head>
+<body class="old_header">
+<audio src="./王者荣耀主题曲.mp3" autoplay loop></audio>
+<!-- 头部开始 -->
+    <div class="head">
+        <div class="w">
+        <!-- 左边 -->
+            <div class="left">
+                <div class="logo fl"><a href="#"></a></div>
+                <span class="fl"></span>
+                <!-- 这里摸得时候会显示一张大图 -->
+                <div class="img fl" id="imgs"><a href="#"></a></div>  
+                  <!-- 隐藏的图 -->
+                <div class="box" id="boxs" style="display:none"></div>
+            </div>
+        <!-- 右边 -->
+            <div class="right fr">
+                <div class="terrace fl"></div>
+                <div class="terrace1 fl">
+                    <a href="#"> 成长守护平台</a>
+                </div>
+                <div class="fl ko">
+                    <!-- 摸上去有下拉一个框框 -->
+                    <a href="#">
+                        <i class="fl"> 腾讯游戏排行榜 </i>
+                        <span class="fl"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 大背景图  -->
+    <div class="image">
+        <!-- 背景图顶部导航 -->
+        <div class="image_nav">
+            <div class="w">
+                <div class="one">
+                    <a href="../全屏导航/全屏导航.html">王者荣耀logo</a>
+                </div>
+                <ul class="ul__s">
+                    <li>
+                        <a href="#">
+                            <span>官网首页</span>
+                            <i>HOME</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>游戏资料</span>
+                            <i>DATA</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>攻略中心</span>
+                            <i>RAIDERS</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>赛事中心</span>
+                            <i>MATCH</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>商城/合作</span>
+                            <i>STORE</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>社区互动</span>
+                            <i>OMMUNITY</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>玩家互动</span>
+                            <i>PLAYER</i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 登陆部分 -->
+                <div class="one1">
+                    <a href="#"></a>
+                </div>
+                <div class="text">
+                    <a href="#">欢迎登陆</a>
+                    <span>登录后查看游戏战绩</span>
+                </div>
+            </div>
+        </div>
+        <!-- 导航列表 -->
+        <div class="nav_list clearfix">
+            <div class="w list">
+                <ul>
+                    <li>
+                        <a href="">版本介绍</a>
+                        <a href="">游戏介绍</a>
+                        <a href="">英雄资料</a>
+                        <a href="">爆料站</a>
+                        <a href="">故事站</a>
+                        <a href="">游戏壁纸</a>
+                    </li>
+                    <li>
+                        <a href="">攻略中心</a>
+                        <a href="">英雄攻略</a>
+                        <a href="">视频中心</a>
+                    </li>
+                    <li>
+                        <a href="">KPL</a>
+                        <a href="">高校赛</a>
+                        <a href="">城市赛</a>
+                        <a href="">QGC</a>
+                        <a href="">TGA</a>
+                        <a href="">WGC</a>
+                        <a href="">全民赛</a>
+                    </li>
+                    <li>
+                        <a href="">万千世界</a>
+                        <a href="">王者信用卡</a>
+                        <a href="">王者文化站</a>
+                        <a href="">百态王者</a>
+                    </li>
+                    <li>
+                        <a href="">官方助手</a>
+                        <a href="">手Q部落</a>
+                        <a href="">微信圈子</a>
+                        <a href="">官方微博</a>
+                        <a href="">微信公众号</a>
+                        <a href="">手Q订阅号</a>
+                        <a href="">同人社区</a>
+                    </li>
+                    <li>
+                        <a href="">成长守护平台</a>
+                        <a href="">健康系统</a>
+                        <a href="">客服专区</a>
+                        <a href="">礼包兑换</a>
+                        <a href="">自助服务</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <!-- 头部导航的底部 -->
+      <div class="hero_box clearfix w">
+            <p>周免英雄（4月2日-4月8日）</p>
+            <div id="box " class="img_box fl">
+                    <ul id="Ul" class="hero_ul fl">
+                        <li>
+                            <img src="./imgs/01.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./imgs/02.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./imgs/03.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./imgs/04.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./imgs/05.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./imgs/06.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./imgs/07.jpg" alt="">
+                        </li>
+                    </ul>
+                    <ul id="Ul2" class="">
+                        <li><img src="./imgs/111-freehover.png" alt=""></li>
+                        <li><img src="imgs/112-freehover.png" alt=""></li>
+                        <li><img src="imgs/113-freehover.png" alt=""></li>
+                        <li><img src="imgs/114-freehover.png" alt=""></li>
+                        <li><img src="imgs/115-freehover.png" alt=""></li>
+                        <li><img src="imgs/116-freehover.png" alt=""></li>
+                        <li><img src="imgs/117-freehover.png" alt=""></li>
+                    </ul>
+            <a href="#" class="more_heros fl">
+                更<br>多<br>英<br>雄
+            </a>
+        </div>
+        <div class="login_box w ">
+        <a class="avatar" href="#"><img src="imgs/avatar1.jpg" alt=""></a>
+        <span class="login_span">0</span>
+        </div>
+        <div class="unlogins">
+        <p class="usenames">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;亲爱的召唤师，欢迎&nbsp;&nbsp;
+            <a class="fl" href="#">登录</a>
+        </p>        
+        </div>      
+      </div>
+     <!--内容部分-->
+    <div class="wrapper">
+        <!--位置区域-->
+        <div class="content w clearfix">
+            <div class="content_nav w">
+               <div class="content_s w">
+                     <div class="con1 fl">
+                         <i class="icon_i fl"></i>
+                         <a href="#"><ins>王者荣耀首页</ins></a>
+                         <span>&nbsp>&nbsp</span>
+                         <label>英雄介绍</label>
+                    </div>   
+                </div>
+                <!-- <i class="icon_i w fl"></i> -->
+                <h3 class="w">英雄介绍</h3>  
+                <ul class="herolist_nav clearfix">
+                    <li class="onlys fl"><a href="#">英雄</a></li>
+                    <li class="fl"><a href="#">局内道具</a></li>
+                    <li class="fl"><a href="#">召唤师技能</a></li>
+                </ul> 
+            </div>
+            <div class="content_ss w clearfix">
+                <div class="hreolist_types fl clearfix">
+                    <ul class="type_lefts clearfix">
+                        <li>综和</li>
+                        <li>定位</li>
+                    </ul>
+                    <ul class="type_contents clearfix">
+                        <li>
+                            <span class="ms_radio span-i">
+                                <i class="current_cu"></i>
+                            </span>
+                            <label>本周免费</label>
+                        </li>
+                        <li>
+                            <span class="ms_radio span-i">
+                                <i class="current_cu"></i>
+                            </span>
+                            <label>新手推荐</label>
+                        </li>
+                    </ul>
+                    <!-- <ul class="radio"> -->
+                        
+                    <!-- </ul> -->
+                    <ul class="type_rights clearfix">
+                        <li>
+                            <span class="ms_radio"><i class="current_cu current_ic"></i></span>  
+                            <label>全部</label>
+                        </li>
+                        <li>
+                            <span class="ms_radio"><i class="current_cu"></i></span>          
+                            <label>坦克</label>
+                        </li>
+                        <li>
+                            <span class="ms_radio"><i class="current_cu" ></i></span>  
+                            <label>战士</label>
+                        </li>
+                        <li>
+                            <span class="ms_radio"><i class="current_cu" ></i></span>
+                            <label>刺客</label>
+                        </li>
+                        <li>
+                            <span class="ms_radio"><i class="current_cu" ></i></span>
+                            <label>法师</label>                                   
+                        </li>
+                        <li>
+                            <span class="ms_radio"><i class="current_cu" ></i></span>
+                            <label>射手</label>
+                        </li>
+                        <li>
+                            <span class="ms_radio"><i class="current_cu"></i></span> 
+                            <label>辅助</label>
+                        </li>
+                    </ul>
+                    <div class="herosearch fr clearfix">
+                        <input class="herosearch_input" type="text"  placeholder="请输入你想要搜索的英雄名">
+                        <a href="javascript:void(0);" class="herosearch_icon"></a>
+                    </div>
+                </div>
+                <div class="herolist_contents fl clearfix">
+                    <p style="display:none;">输入的英雄不在，请重新输入</p>
+                    <ul class="clearfix" id="ul_liss">
+                        <li><a href=""><img src="imgs/1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/4.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/5.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/6.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/7.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/8.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/9.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/10.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/11.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/12.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/13.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/14.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/15.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/16.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/17.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/18.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/19.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/20.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/21.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/22.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/23.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/24.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/25.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/26.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/27.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/28.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/29.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/30.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/31.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/32.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/33.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/34.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/35.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/36.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/37.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/38.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/39.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/40.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/41.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/42.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/43.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/44.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/45.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/46.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/47.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/48.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/49.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/50.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/51.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/52.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/53.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/54.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/55.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/56.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/57.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/58.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/59.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/60.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/61.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/62.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/63.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/64.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/65.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/66.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/67.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/68.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/69.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/70.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/71.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/72.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/73.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/74.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/75.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/76.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/77.jpg" alt=""></a></li>
+                        <li><a href=""><img src="imgs/78.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div> 
+              <!--英雄头像区域-->     
+        </div>
+        <!--********************************video Begin******************************-->
+        <div class="video">
+        <div class="textBox">
+            <ul class="text">
+                <li><img src="./imgs/icon_all/c1.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c2.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c3.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c4.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c5.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c6.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c7.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c8.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c9.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c10.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c11.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c12.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c13.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c14.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c15.fw.png" alt=""/></li>
+                <li><img src="./imgs/icon_all/c16.fw.png" alt=""/></li>
+            </ul>
+        </div>
+        <ul class="bigBg">
+            <li><img src="./imgs/icon_all/big_1.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_2.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_3.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_4.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_5.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_6.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_7.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_8.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_9.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_10.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_11.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_12.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_13.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_14.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_15.jpg" alt=""/></li>
+            <li><img src="./imgs/icon_all/big_16.jpg" alt=""/></li>
+        </ul>
+    
+        <div class="myLb w">
+            <ul class="left">
+                <li><img src="./imgs/icon_all/big/32/big-1.jpg" alt="" title="死灵飞龙"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-3.jpg" alt="" title="死亡先知"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-2.jpg" alt="" title="双头龙,神灵武士,蝙蝠骑士"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-4.jpg" alt="" title="光之守卫"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-5.jpg" alt="" title="船长,血魔"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-6.jpg" alt="" title="噬魂鬼"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-7.jpg" alt="" title="米波"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-8.jpg" alt="" title="黑鸟"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-9.jpg" alt="" title="斯拉克"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-10.jpg" alt="" title="熊战士"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-11.jpg" alt="" title="伐木机"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-12.jpg" alt="" title="水晶室女"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-13.jpg" alt="" title="Ronshan"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-14.jpg" alt="" title="巨魔战将"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-15.jpg" alt="" title="巨牙海明"/></li>
+                <li><img src="./imgs/icon_all/big/32/big-16.jpg" alt="" title="军团指挥官"/></li>
+            </ul>
+            <ul class="right">
+                <li><img src="./imgs/icon_all/big/32/big-1-1.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-3-3.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-2-2.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-4-4.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-5-5.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-6-6.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-7-7.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-8-8.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-9-9.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-10-10.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-11-11.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-12-12.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-13-13.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-14-14.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-15-15.jpg" alt=""/></li>
+                <li><img src="./imgs/icon_all/big/32/big-16-16.jpg" alt=""/></li>
+            </ul>
+        </div>
+    </div>
+<!--********************************video Begin******************************-->
+<div class="container">
+    <!-- Team members structure start -->
+    <div class="single-member effect-3  clearfix">
+        <div class="member-image">
+            <img  class="img" src="./imgs/meimei/0.jpg" alt="Member">
+        </div>
+        <div class="member-info">
+            <h3 class="h3">小乔</h3>
+            <h5 class="h5">XiaoQiao</h5>
+            <p class="p">
+                本应是小桥。小桥和大桥是姐妹俩，是东汉末年庐江士族桥玄的女儿，大乔嫁于孙策，小乔嫁给了周瑜。威逼江南。
+            </p>
+            <div class="social-touch">
+                <a class="fb-touch a" href="#"></a>
+                <a class="tweet-touch a" href="#"></a>
+                <a class="linkedin-touch a" href="#"></a>
+            </div>
+        </div>
+    </div>
+            <div class="single-member effect-3">
+                <div class="member-image">
+                    <img class="img" src="./imgs/meimei/1.jpg" alt="Member">
+                </div>
+                <div class="member-info">
+                    <h3 class="h3">周瑜</h3>
+                    <h5 class="h5">ZhouYu</h5>
+                    <p class="p">周瑜，字公瑾，三国江东英豪之一。为人风流倜傥，善音律，人称度曲周郎，留下“曲有误，周郎顾”的美谈。</p>
+                    <div class="social-touch">
+                        <a class="fb-touch a" href="#"></a>
+                        <a class="tweet-touch a" href="#"></a>
+                        <a class="linkedin-touch a" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-member effect-3">
+                <div class="member-image">
+                    <img class="img" src="./imgs/meimei/2.jpg" alt="Member">
+                </div>
+                <div class="member-info">
+                    <h3 class="h3">李白</h3>
+                    <h5 class="h5">LiBai</h5>
+                    <p class="p">李白，字太白，又称青莲居士。唐代大诗人，后世誉之为诗仙。为人豪放，好酒，好剑术，好远游，好做侠客行。</p>
+                    <div class="social-touch">
+                        <a class="fb-touch a" href="#"></a>
+                        <a class="tweet-touch a" href="#"></a>
+                        <a class="linkedin-touch a" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-member effect-3">
+                <div class="member-image">
+                    <img class="img" src="./imgs/meimei/3.jpg" alt="Member">
+                </div>
+                <div class="member-info">
+                    <h3 class="h3">王昭君</h3>
+                    <h5 class="h5">WangZhaoJun</h5>
+                    <p class="p">王昭君，字嫱，系历史上著名的美女。据《汉书·元帝纪》，王昭君本是普通宫女，元帝赐昭君与呼韩邪单于为阏氏。</p>
+                    <div class="social-touch">
+                        <a class="fb-touch a" href="#"></a>
+                        <a class="tweet-touch a" href="#"></a>
+                        <a class="linkedin-touch a" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-member effect-3">
+                <div class="member-image">
+                    <img class="img" src="./imgs/meimei/4.jpg" alt="Member">
+                </div>
+                <div class="member-info">
+                    <h3 class="h3">刘禅</h3>
+                    <h5 class="h5">LiuChang</h5>
+                    <p class="p">三国时蜀国开国皇帝刘备之子，史称后主，小名阿斗，《三国志·蜀书》介绍。刘禅系刘备甘夫人所生，两次遇险，均为赵云所救。</p>
+                    <div class="social-touch">
+                        <a class="fb-touch a" href="#"></a>
+                        <a class="tweet-touch a" href="#"></a>
+                        <a class="linkedin-touch a" href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-member effect-3">
+                <div class="member-image">
+                    <img class="img" src="./imgs/meimei/5.jpg" alt="Member">
+                </div>
+                <div class="member-info">
+                    <h3 class="h3">大乔</h3>
+                    <h5 class="h5">DaQiao</h5>
+                    <p class="p">唐朝诗人杜牧有诗道：“东风不与周郎便，铜雀春深锁二乔。”《三国演义》里诸葛亮游说孙权抗曹，也沿用了这个传说。</p>
+                    <div class="social-touch">
+                        <a class="fb-touch a" href="#"></a>
+                        <a class="tweet-touch a" href="#"></a>
+                        <a class="linkedin-touch a" href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    <!-- Team members structure start -->
+    <!--********************************Wss******************************-->
+    </div>
+    <div id="bigbox" class="bigbox_wss">
+        <div class="one1_wss two_wss Wss" id="case">
+            <a href="#" style="z-index: 10000">
+            <img id="dada" src="./imgs/wss_1.jpg"style="width: 100px;height: 100px;border-radius: 100%;"alt=""/>
+            </a>
+            <div id="yy_wss" class="qu_wss"><h3>姓名：七七</h3>
+            <p>你的梦想是什么?<br>做一条能翻身的咸鱼</p>
+            </div>
+        </div>
+    
+        <div class="one2_wss two1 Wss" id="case1"><a href="#" style="z-index: 10000">
+            <img src="./imgs/wss_2.jpg"style="width:100px;height: 100px;border-radius: 100%;"alt=""/>
+        </a>
+            <div class="qu_wss" id="yy_ll">
+                <h3>名字：露露 </h3>
+            <p>你的梦想是什么?<br>我想要好多好多的钱</p>
+        </div>
+        </div>
+        <div class="one3_wss two2 Wss" id="case2">
+            <a href="#" style="z-index: 10000">
+            <img src="./imgs/wss_3.jpg"style="width: 100px;height: 100px;border-radius: 100%;"alt=""/>
+        </a>
+           <div class="qu_wss" id="yy_zd">
+               <h3>姓名：朱迪 </h3>
+                <p>你的梦想是什么?<br>能和猪猪侠合影</p>
+            </div>
+        </div>
+        <div class="one4_wss two3 Wss" id="case3">
+            <a href="#" style="z-index: 10000">
+            <img src="./imgs/wss_4.jpg"style="width: 100px;height: 100px;border-radius: 100%;"alt=""/>
+            </a>
+            <div class="qu_wss" id="yy_ff">
+                <h3>名字:飞飞 </h3>
+                <p>你的梦想是什么?<br>做一个写bug的程序员</p>
+            </div>
+        </div>    
+    </div>    
+    <!--********************************Wss******************************-->
+    </div>
+<!-- 底部 -->
+    <div class="ends">
+        <div class="w">
+            <!-- 一块 -->
+            <div class="endss">
+                <div class="one_ss fl">
+                    <a href="#"></a>
+                </div>
+                <div class="si">
+                    <div class="two fl">
+                        <a href="#"></a>
+                    </div>
+                    <div class="san fl">
+                        <a href="#"></a>
+                    </div>
+                    <div class="wu fr">
+                        <a href="#" style="color: #333">
+                            <h3 class="fl">合作媒体</h3>
+                            <i class="icon fr"></i>
+                            <span class="fr"></span>
+                            <div class="liu">
+                                <ul>
+                                    <li>任万堂</li>
+                                    <li>掌游宝</li>
+                                    <li>搞趣网</li>
+                                    <li>多玩</li>
+                                    <li>游民星空</li>
+                                    <li>兔玩网</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 二块 -->
+            <div class="end_ss">
+                <div class="wen fl">
+                    <h4 style="font-size: 14px;color: #333">温馨提示：本游戏适合16岁(含)以上玩家娱乐</h4>
+                    <p>
+                        <em style="margin: 0">抵制不良游戏</em>
+                        <em>拒绝盗版游戏</em>
+                        <em>注意自我保护</em>
+                        <em>谨防受骗上当</em>
+                        <em>适度游戏益脑</em>
+                        <em>沉迷游戏伤身</em>
+                        <em style="margin: 0">合理安排时间</em>
+                        <em>享受健康生活</em>
+                    </p>
+                    <p class="fl" style="margin-top: 8px">
+                        《王者荣耀》全部背景故事发生于架空世界“王者大陆”中。相关人物、地理、事件均为艺术创作，并非正史。若因观看王者故事对相关历史人物产生兴趣，建议查阅正史记载。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

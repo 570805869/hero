@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+                body {
+            background: RGBA(29, 20, 35, 1);
+            font-family: 'Muli';
+            -webkit-font-smoothing: antialiased;
+            }
+
+            main {
+            padding: 60px 15px;
+            text-align: center;
+            max-width: 100%;
+            }
+
+            h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0 0 10px;
+            }
+
+            @media screen and (min-width: 600px) {
+            h1 {
+                font-size: 3em;
+            }
+            }
+            h2 {
+            margin: 0 0 50px;
+            font-size: 1.5em;
+            font-weight: 200;
+            color: rgba(255, 255, 255, 0.6);
+            }
+
+            aside {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(200deg, #27156E, #6A2A88, #9F4981);
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            z-index: 2;
+            }
+
+            .open {
+            opacity: 1;
+            visibility: visible;
+            }
+
+            nav {
+            text-align: center;
+            height: 95vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            }
+            nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            }
+            nav ul li {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
+            line-height: 14vh;
+            }
+            nav ul li a {
+            font-size: 1.5em;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            display: block;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.5);
+            }
+            nav ul li a:hover {
+            color: rgba(255, 255, 255, 0.9);
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+            }
+            nav ul li a:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+            }
+            nav ul li a:before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            bottom: 0;
+            left: 25%;
+            background: white;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+            }
+
+            @media screen and (min-width: 600px) {
+            nav ul li a {
+                font-size: 3em;
+            }
+            }
+            button {
+            padding: 15px 40px;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            border-radius: 8px;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            }
+            button:hover {
+            border: 1px solid white;
+            }
+
+            .close {
+            position: fixed;
+            top: 40px;
+            right: 60px;
+            color: white;
+            z-index: 3;
+            cursor: pointer;
+            font-family: sans-serif;
+            }
+            .close span,
+            .close span:before,
+            .close span:after {
+            border-radius: 4px;
+            height: 5px;
+            width: 35px;
+            background: white;
+            position: absolute;
+            display: block;
+            content: '';
+            }
+            .close span {
+            background: transparent;
+            }
+            .close span:before {
+            -webkit-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            }
+            .close span:after {
+            -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            }
+
+            .outer-close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 85px;
+            height: 85px;
+            cursor: pointer;
+            }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>We are eighteen years old this year</h1>
+        <h2>这是一份来自五位美少女的 精心设计 的 王者荣耀</h2>
+        <button class="toggle-overlay">Come on,baby~</button>
+    </main>
+    <aside>
+        <div class="outer-close toggle-overlay">
+            <a class="close">
+                <span></span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../主页/index.html">荣耀首页--许荻</a>
+                </li>
+                <li>
+                    <a href="../王者荣耀..王者文化站/王者文化站.html">王者文化站--冉梦芽</a>
+                </li>
+                <li>
+                    <a href="../攻略中心/guide.html">攻略中心--程媛媛</a>
+                </li>
+                <li>
+                    <a href="../游戏资料1/data.html">游戏资料--王姗姗</a>
+                </li>
+                <li>
+                    <a href="../商城中心/store.html">商城中心--刘美君</a>
+                </li>
+                <li>
+                    <a href="../幻灯片式图片集/hdp.html">❤</a>
+                </li>
+            </ul>
+        </nav>
+        <audio src="./The%20offensive.mp3" autoplay loop></audio>
+    </aside>
+<script src="./jquery-1.12.4.js"></script>
+<script>
+    (function ($) {
+            $(function () {
+                $('.toggle-overlay').click(function () {
+                    $('aside').toggleClass('open');
+                });
+            });
+        })(jQuery);
+</script>
+</body>
+</html>

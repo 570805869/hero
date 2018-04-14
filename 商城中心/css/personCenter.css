@@ -1,0 +1,66 @@
+/*个人中心*/
+.perCenter {
+    width: 100%;
+    height: 700px;
+}
+.perCenter .center {
+    height: 640px;
+    margin-top: 60px;
+}
+.perCenter .center .pertop {
+    height: 88px;
+    background: url("../image/bg-personal.jpg") no-repeat;
+    font-size: 18px;
+    color: #fff;
+    line-height: 88px;
+    padding-left: 50px;
+}
+/*中间导航部分*/
+.centernav {
+    height: 612px;
+}
+.centernav .nav {
+    background: #f4f4f4;
+    height: 612px;
+    width: 184px;
+}
+.centernav .nav li {
+    height: 52px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    line-height: 52px;
+}
+.centernav .nav li a {
+    display: block;
+    width: 184px;
+    height: 52px;
+}
+.centernav .nav li .current {
+    color: red;
+    border-left: 3px solid red;
+}
+.centernav .nav li a:hover {
+    color: red;
+    border-left: 3px solid red;
+}
+/*空白处*/
+.centernav .blank {
+    width: 1016px;
+    height: 612px;
+}
+.centernav .blank .line {
+    height: 36px;
+    width: 986px;
+    margin-top: 10px;
+    margin-left: 31px;
+    background: #f4f4f4;
+    line-height: 36px;
+}
+.centernav .blank .line li {;
+    text-align: center;
+    width: 174px;
+    float: left;
+}
+.centernav .blank .line .one {
+    width: 464px;
+}
